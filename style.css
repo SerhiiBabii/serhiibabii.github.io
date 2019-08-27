@@ -1,0 +1,83 @@
+body {
+  position: relative;
+  margin: 0%;
+  overflow-x: hidden;
+  background: rgb(255, 255, 255);
+}
+
+.main {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 30px;
+  left: 80px;
+}
+
+.main__project {
+  width: 330px;
+  height: 90%;
+  margin: 10px 20px;
+}
+
+@media (max-width: 850px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.main__inner {
+  height: 600px;
+  width: 330px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.main__link {
+  width: 330px;
+  margin: 10px 0;
+}
+
+.main__img {
+  height: 600px;
+  width: 330px;
+  object-fit: cover;
+  border: solid grey 2px;
+  filter: grayscale(100%);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.main__img:hover {
+  filter: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+li i {
+  cursor: pointer;
+}
+
+.fas,
+.fab {
+  color: #585558;
+}
+
+.fa-github-square:hover {
+  color: #800080;
+}
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+.fa-phone-square-alt:hover {
+  color: rgb(101, 226, 195);
+}
+.fa-envelope-square:hover {
+  color: red;
+}
