@@ -5,18 +5,27 @@ body {
   background: rgb(255, 255, 255);
 }
 
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
 .main {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 30px;
+  flex-wrap: wrap;
+  top: 50px;
   left: 80px;
 }
 
 .main__project {
-  width: 330px;
+  width: 350px;
   height: 90%;
   margin: 10px 20px;
+  border: solid grey 2px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 @media (max-width: 850px) {
@@ -26,7 +35,8 @@ body {
 }
 
 .main__inner {
-  height: 600px;
+  min-height: 200px;
+  max-height: 600px;
   width: 330px;
   overflow: hidden;
   box-sizing: border-box;
@@ -39,13 +49,16 @@ body {
 }
 
 .main__img {
-  height: 600px;
   width: 330px;
   object-fit: cover;
-  border: solid grey 2px;
   filter: grayscale(100%);
   transition: all 1s;
   cursor: pointer;
+}
+
+.main__small-text {
+  display: flex;
+  justify-content: space-around;
 }
 
 .main__img:hover {
